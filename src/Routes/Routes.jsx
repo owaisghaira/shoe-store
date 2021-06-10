@@ -9,7 +9,8 @@ function AppRoutes() {
         <Router>
             <Route exact path='/' component={Home} />
             <Route exact path='/product' component={Product} />
-            <Route exact path='/productdetail' component={ProductDetail} />
+            <Route exact path='/product/:id' component={ProductDetail} />
+            {/* <Route exact path='*' component={()=><h3>404 Not Found</h3>} /> */}
         </Router>
     )
 }
